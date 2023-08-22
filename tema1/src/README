@@ -1,0 +1,3 @@
+Panait Stefan Andrei
+   1. Am creeat clasa Student care implementeaza serializable pentru a putea fii salvat intr un fisier binar
+   -StudentDataBase este clasa singleton care se ocupa cu salvarea si cu stergerea din fisier.
