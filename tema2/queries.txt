@@ -1,0 +1,15 @@
+select * from person where name = 'Andrei';
+
+select * from student where avarageMark > 3;
+
+update person set phoneNumber = '0771102323' where id = '63f86966-433c-11ee-be56-0242ac120002';
+update profesor set salary = 9000 where staff_number = '9a7721b2-433c-11ee-be56-0242ac120002';
+
+
+delete from address where id = 'cd92b9fc-433d-11ee-be56-0242ac120002';
+
+delete from student where avarageMark < 5;
+select * from profesor;
+
+select * from profesor inner join person on profesor.person_id = person.id;
+select * from person LEFT OUTER JOIN address ON person.address_id = address.id;
