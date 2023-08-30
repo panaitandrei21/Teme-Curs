@@ -1,0 +1,7 @@
+Panait Stefan Andrei
+-pentru a se creea customer se face un post la http://localhost:8080/api/v1/customer/add
+-pentru a se creea orders si un nou customer caruia ii sunt asignate se face call la POST http://localhost:8080/api/v1/customer/create_order
+-pentru a se creea produsele se face call POST http://localhost:8080/api/v1/products/add
+-pentru a primii toate produsele se face call  GET http://localhost:8080/api/v1/products/all_products
+-pentru a primii orderurile unui client se face call GET http://localhost:8080/api/v1/customer/orders/{{id}}
+-pentru a primii datele postale se face call GET http://localhost:8080/api/v1/customer/user/{{username}}/postalDetails
