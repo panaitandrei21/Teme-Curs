@@ -6,12 +6,14 @@
     <title>Minesweeper Game</title>
 </head>
 <body>
-    <h1>Set the dimensions of the board and the difficulty</h1>
+    <h1>Set the difficulty and the rate of the bombs</h1>
     <select id="difficulty">
         <option value="easy">Easy</option>
         <option value="medium">Medium</option>
         <option value="hard">Hard</option>
     </select>
+    Bomb Probability: <input type="number" id="bombProb"><br>
+    Max Probability: <input type="number" id="maxProb"><br>
     <button onclick="setupGame()">Setup Game</button>
 
     <h2>Game Board</h2>

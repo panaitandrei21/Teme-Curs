@@ -54,7 +54,9 @@ function generateBoard(boardMetadata) {
     for (let i = 0; i < boardMetadata.rowCount; i++) {
         board[i] = new Array(boardMetadata.colCount);
     }
-
+    const bombProbability = document.getElementById('bombProb').value;
+    const maxProbability = document.getElementById('maxProb').value;
+    
     for(let i = 0; i < boardMetadata.rowCount; i++) {
         for(let j = 0; j < boardMetadata.colCount; j++) {
             board[i][j] = new BoardSquare();
