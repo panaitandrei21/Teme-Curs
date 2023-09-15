@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+</head>
+<body>
+    <h1>Set the dimensions of the board and the difficulty</h1>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button onclick="setupGame()">Setup Game</button>
+
+    <h2>Game Board</h2>
+    <table id="board" border="1"></table>
+
+    <h3>Select the square (Alternative way)</h3>
+    Row: <input type="number" id="selectRow"><br>
+    Column: <input type="number" id="selectCol"><br>
+    <button onclick="selectSquare()">Select Square</button>
+
+    <script src="solution-template.js"></script>
+</body>
+</html>
