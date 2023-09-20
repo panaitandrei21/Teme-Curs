@@ -1,0 +1,7 @@
+<input [(ngModel)]="searchId" type="number" placeholder="Search for todo by ID">
+<button (click)="onSearch()">Search</button>
+
+<div *ngIf="foundTodo">
+  <h3>{{ foundTodo.title }}</h3>
+  <p>{{ foundTodo.description }}</p>
+</div>

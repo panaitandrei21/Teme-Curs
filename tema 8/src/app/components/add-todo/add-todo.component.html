@@ -1,0 +1,22 @@
+<h3>Create a new todo:</h3>
+
+<form [formGroup]="todoForm" (ngSubmit)="addTodo()">
+  <div class="input-group">
+    <label for="title">Todo Title:</label>
+    <input id="title" type="text" formControlName="title" placeholder="Enter title"/>
+  </div>
+  
+  <div class="input-group">
+    <label for="description">Todo Description:</label>
+    <input id="description" type="text" formControlName="description" placeholder="Enter description"/>
+  </div>
+
+  <div class="input-group">
+    <label for="completed">Is it completed?</label>
+    <input id="completed" type="checkbox" formControlName="completed"/>
+  </div>
+
+  <div class="action-btn">
+    <button type="submit">Submit Todo</button>
+  </div>
+</form>
